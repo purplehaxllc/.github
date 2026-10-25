@@ -1,0 +1,48 @@
+name: Bug report
+description: Something is broken or not working the way it should
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What's wrong?
+      description: Describe it however makes sense to you. No technical words needed.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How do you make it happen?
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How bad is it?
+      options:
+        - Minor annoyance
+        - Gets in the way, but there's a workaround
+        - Blocks something important
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where did it happen?
+      description: A link, a page or screen name, a version, or which device you were on.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or logs
+      description: Drag images straight in here. Remove any keys, passwords, or personal details before pasting logs.

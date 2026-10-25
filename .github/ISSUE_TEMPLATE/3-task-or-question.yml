@@ -1,0 +1,16 @@
+name: Task or question
+description: A to-do, a change that isn't a new feature, or something you want to ask
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing, or what's the question?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else that helps
+      description: Background, links, deadlines, screenshots.
