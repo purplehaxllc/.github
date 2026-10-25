@@ -1,0 +1,34 @@
+name: Feature request
+description: Ask for something new or a change to how something works
+title: "[Feature] "
+labels: ["feature-request"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: Describe it however makes sense to you. No technical words needed.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: Who is it for, and what does it make easier?
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How soon do you need it?
+      options:
+        - Nice to have
+        - Would really help
+        - Needed soon
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or pictures
+      description: Links to things that do it well, sketches, screenshots. Drag images straight in here.
